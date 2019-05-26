@@ -9,7 +9,7 @@
         <script defer src="js/main.js">
         </script>
     </head>
-    <body>
+    <body onload="logonView()">
         <!--Здесь у нас идёт описание кода шапки-->
         <header>
                 <div class="logo">
@@ -25,14 +25,14 @@
                         выполняются функции из main.js в зависимости от событий мышки
                     -->
                     <div class="menu" id="menu">
-                        <a href="#about" onclick="ShowAbout()" class = "itemcalm" onmouseover="OverAbout()" onmouseout="OutItem()">О нас</a>
-                        <a href="#news" onclick="ShowNews()" class = "itemcalm" onmouseover="OverNews()" onmouseout="OutItem()">Новости</a>
-                        <a href="#culture" onclick="ShowCulture()" class = "itemcalm" onmouseover="OverCulture()" onmouseout="OutItem()">Культура</a>
-                        <a href="#history" onclick="ShowHistory()" class = "itemcalm" onmouseover="OverHistory()" onmouseout="OutItem()">История</a>
-                        <a href="#law" onclick="ShowLaw()" class = "itemcalm" onmouseover="OverLaw()" onmouseout="OutItem()">Законы</a>
-                        <a href="#reports" onclick="ShowReports()" class = "itemcalm" onmouseover="OverReports()" onmouseout="OutItem()">Обращения</a>
-                        <a href="#forum" onclick="ShowForum()" class = "itemcalm" onmouseover="OverForum()" onmouseout="OutItem()">Форум</a>
-                        <a href="#login" onclick="ShowLogin()" class = "itemcalm" onmouseover="OverLogin()" onmouseout="OutItem()">Войти</a>
+                        <a href="#about" onclick="ShowHTML('about.html', 1)" class = "itemcalm" onmouseover="OverItem(1)" onmouseout="OutItem()">О нас</a>
+                        <a href="#news" onclick="ShowHTML('news.html', 3)" class = "itemcalm" onmouseover="OverItem(3)" onmouseout="OutItem()">Новости</a>
+                        <a href="#culture" onclick="ShowHTML('culture.html', 5)" class = "itemcalm" onmouseover="OverItem(5)" onmouseout="OutItem()">Культура</a>
+                        <a href="#history" onclick="ShowHTML('history.html', 7)" class = "itemcalm" onmouseover="OverItem(7)" onmouseout="OutItem()">История</a>
+                        <a href="#law" onclick="ShowHTML('law.html', 9)" class = "itemcalm" onmouseover="OverItem(9)" onmouseout="OutItem()">Законы</a>
+                        <a href="#reports" onclick="ShowHTML('reports.html', 11)" class = "itemcalm" onmouseover="OverItem(11)" onmouseout="OutItem()">Обращения</a>
+                        <a href="#forum" onclick="ShowHTML('forum.html', 13)" class = "itemcalm" onmouseover="OverItem(13)" onmouseout="OutItem()">Форум</a>
+                        <a href="#login" name="login" onclick="ShowLogin('login.html', 15)" class = "itemcalm" onmouseover="OverItem(15)" onmouseout="OutItem()">Войти</a>
                     </div>
                     <!--Здесь поиск-->
                     <div class="search">

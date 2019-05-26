@@ -14,10 +14,10 @@ header{
   background:#5d366d; /*Цвет фона*/
   position: fixed;
   z-index: 9999;
-  box-shadow: 0em 0.4em 20px rgba(0, 0, 0, 0.5);
 }
+
 #space{
-  height:239px;
+  height:238px;
 }
 
 /*Записываем анимацию, задавая ключевые кадры*/
@@ -54,7 +54,7 @@ header{
 .banner{
   /*заливаем градиентом*/
   -webkit-mask-image: -webkit-gradient(
-      linear, left top, right top, 
+      linear, left top, right top,
       color-stop(0.00,  rgba(0,0,0,0)),
       color-stop(0.35,  rgba(0,0,0,0.5)),
       color-stop(0.50,  rgba(0,0,0,1)),
@@ -76,17 +76,18 @@ header{
 
 /*Создаём навигационную панель*/
 nav{
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   background: rgb(62,0,78);
   /*Заливаем градиентом*/
-  background: linear-gradient(0deg, #5d366d 0%,#8a5b9c 100%); 
+  background: linear-gradient(0deg, #5d366d 0%,#8a5b9c 100%);
+  box-shadow: 0em 0.4em 20px rgba(0, 0, 0, 0.5);
   width: 100%;
 }
 /*Определяем стиль для области с логотипом*/
 .logo
 {
-  display: flex; 
+  display: flex;
   /*Элементы будут располагаться слева направо*/
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -104,17 +105,17 @@ nav{
 .logo h1{
   font-family: 'Playfair Display SC';
   color: white;
-  border-left: 2px solid #ccc; /* Параметры линии */ 
+  border-left: 2px solid #ccc; /* Параметры линии */
   margin-left: 20px; /* Отступ слева */
-  padding-left: 10px; /* Расстояние от линии до текста */ 
+  padding-left: 10px; /* Расстояние от линии до текста */
 }
 /*Задаём отстсупы для меню*/
 .menu{
   padding: 10px;
-  padding-left: 5px;    
+  padding-left: 5px;
 }
 /*Три различных стиля пункта меню*/
-.itemcalm{ 
+.itemcalm{
   color: white;
   padding: 10px;
   text-decoration: none;
@@ -145,7 +146,7 @@ background: rgb(242, 223, 245);
 color: rgb(63, 51, 66);
 }
 .search button {
-position: absolute; 
+position: absolute;
 top: 0;
 right: 0px;
 width: 30px;
@@ -253,7 +254,10 @@ summary::before {
 }
 .flex {
 	min-height: 100vh;
-	display: -webkit-flex; 
+	display: -webkit-flex;
 	display: flex;
 	justify-content:flex-start
+}
+.selnode {
+  padding: 100px;
 }

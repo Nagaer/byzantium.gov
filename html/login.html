@@ -1,23 +1,35 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/login.css">
+        <script defer src="js/login.js">
+        </script>
     </head>
     <body>
         <div id="signin">
         <form>
+            <div></div>
             <table>
                 <tr>
-                    <td>Логин</td>
-                    <td><input type="text"></td>
+                    <th width="100"></th>
+                    <th></th>
                 </tr>
                 <tr>
-                    <td>Пароль</td>
-                    <td><input type="text"></td>
+                    <td>Логин:</td>
+                    <td><input name="nick" type="text"></td>
                 </tr>
                 <tr>
-                    <td><button type="submit">Вход</button></td>
-                    <td><button type="submit">Регистрация</button></td>
+                    <td>Пароль:</td>
+                    <td><input name="passw" type="password"></td>
                 </tr>
+                <tr>
+                    <td>*e-mail:</td>
+                    <td><input name="email" type="text"></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="sendSigninData()" name="enter">Вход</button></td>
+                    <td><button type="button" onclick="sendSignupData()" class="regis">Регистрация</button></td>
+                </tr>
+                <tr><td>*заполнить при регистрации</td></tr>
             </table>
         </form>
         </div>
